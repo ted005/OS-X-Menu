@@ -12,22 +12,63 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <rect key="frame" x="0.0" y="2" width="653" height="383"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fqW-en-dSx">
-                    <rect key="frame" x="210" y="128" width="60" height="17"/>
+                    <rect key="frame" x="297" y="346" width="60" height="17"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Calendar" id="BGH-oQ-0zD">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </textFieldCell>
                 </textField>
+                <scrollView autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33A-xn-c2e">
+                    <rect key="frame" x="20" y="11" width="613" height="328"/>
+                    <clipView key="contentView" id="62j-Zh-4GN">
+                        <rect key="frame" x="1" y="1" width="248" height="158"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView id="SwH-gQ-bTs">
+                                <rect key="frame" x="0.0" y="0.0" width="248" height="158"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <outlet property="itemPrototype" destination="khW-pN-B7J" id="UVs-dH-kzF"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="5zy-Xv-VQe">
+                        <rect key="frame" x="1" y="144" width="233" height="15"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="bfc-Ht-2h9">
+                        <rect key="frame" x="234" y="1" width="15" height="143"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
             </subviews>
             <constraints>
-                <constraint firstAttribute="centerY" secondItem="fqW-en-dSx" secondAttribute="centerY" id="H7h-Ac-LVc"/>
-                <constraint firstAttribute="centerX" secondItem="fqW-en-dSx" secondAttribute="centerX" id="RI5-yq-iPJ"/>
+                <constraint firstItem="fqW-en-dSx" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="TYF-XV-ACg"/>
+                <constraint firstItem="33A-xn-c2e" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="UYy-NE-msl"/>
+                <constraint firstAttribute="bottom" secondItem="33A-xn-c2e" secondAttribute="bottom" constant="11" id="coB-BW-1Hd"/>
+                <constraint firstAttribute="trailing" secondItem="33A-xn-c2e" secondAttribute="trailing" constant="20" id="hHH-Ra-wMB"/>
+                <constraint firstAttribute="centerX" secondItem="fqW-en-dSx" secondAttribute="centerX" id="hyF-ZG-aCc"/>
+                <constraint firstItem="33A-xn-c2e" firstAttribute="top" secondItem="fqW-en-dSx" secondAttribute="bottom" constant="7" id="rcV-Yu-Rjr"/>
             </constraints>
+            <point key="canvasLocation" x="439.5" y="460.5"/>
         </customView>
+        <collectionViewItem id="zku-FE-5DU"/>
+        <collectionViewItem id="khW-pN-B7J">
+            <connections>
+                <outlet property="view" destination="kGT-VC-qJ3" id="oKT-iD-ihK"/>
+            </connections>
+        </collectionViewItem>
+        <view id="kGT-VC-qJ3">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+        </view>
     </objects>
 </document>

@@ -13,6 +13,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
     
+    let popover = NSPopover()
+    
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-2)
 
 
@@ -20,16 +22,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to initialize your application
         if let button = statusItem.button {
             button.image = NSImage(named: "StatusBarButtonImage")
-            button.action = Selector("printQuote:")
+//            button.action = Selector("printQuote:")
+            button.action = Selector("togglePopover:")
         }
         
-        let menu = NSMenu()
+//        let menu = NSMenu()
+//        
+//        menu.addItem(NSMenuItem(title: "Print Quote", action: Selector("printQuote:"), keyEquivalent: "P"))
+//        menu.addItem(NSMenuItem.separatorItem())
+//        menu.addItem(NSMenuItem(title: "Quit Quotes", action: Selector("terminate:"), keyEquivalent: "q"))
+//        
+//        statusItem.menu = menu
         
-        menu.addItem(NSMenuItem(title: "Print Quote", action: Selector("printQuote:"), keyEquivalent: "P"))
-        menu.addItem(NSMenuItem.separatorItem())
-        menu.addItem(NSMenuItem(title: "Quit Quotes", action: Selector("terminate:"), keyEquivalent: "q"))
-        
-        statusItem.menu = menu
+        popover.contentViewController = TWCalendarViewController(nibName: "TWCalendarViewController", bundle: nil)
     }
     
     //selector
@@ -42,6 +47,24 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
+    }
+    
+    func showPopover(sender: AnyObject?) {
+        if let button = statusItem.button {
+            popover.showRelativeToRect(button.bounds, ofView: button, preferredEdge: NSMinYEdge)
+        }
+    }
+    
+    func closePopover(sender: AnyObject?) {
+        popover.performClose(sender)
+    }
+    
+    func togglePopover(sender: AnyObject?) {
+        if popover.shown {
+            closePopover(sender)
+        } else {
+            showPopover(sender)
+        }
     }
 
 
