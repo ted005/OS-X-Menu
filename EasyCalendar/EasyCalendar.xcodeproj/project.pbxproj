@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC0873651B0A37D900A2851E /* MLCalendarBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = DC08735F1B0A37D900A2851E /* MLCalendarBackground.m */; };
+		DC0873661B0A37D900A2851E /* MLCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0873611B0A37D900A2851E /* MLCalendarCell.m */; };
+		DC0873671B0A37D900A2851E /* MLCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0873631B0A37D900A2851E /* MLCalendarView.m */; };
+		DC0873681B0A37D900A2851E /* MLCalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC0873641B0A37D900A2851E /* MLCalendarView.xib */; };
 		DC86C0A51AFA630C00C1D378 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC86C0A41AFA630C00C1D378 /* AppDelegate.swift */; };
 		DC86C0A71AFA630C00C1D378 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC86C0A61AFA630C00C1D378 /* Images.xcassets */; };
 		DC86C0AA1AFA630C00C1D378 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC86C0A81AFA630C00C1D378 /* MainMenu.xib */; };
@@ -26,6 +30,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC08735D1B0A37D800A2851E /* EasyCalendar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EasyCalendar-Bridging-Header.h"; sourceTree = "<group>"; };
+		DC08735E1B0A37D900A2851E /* MLCalendarBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLCalendarBackground.h; sourceTree = "<group>"; };
+		DC08735F1B0A37D900A2851E /* MLCalendarBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLCalendarBackground.m; sourceTree = "<group>"; };
+		DC0873601B0A37D900A2851E /* MLCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLCalendarCell.h; sourceTree = "<group>"; };
+		DC0873611B0A37D900A2851E /* MLCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLCalendarCell.m; sourceTree = "<group>"; };
+		DC0873621B0A37D900A2851E /* MLCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLCalendarView.h; sourceTree = "<group>"; };
+		DC0873631B0A37D900A2851E /* MLCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLCalendarView.m; sourceTree = "<group>"; };
+		DC0873641B0A37D900A2851E /* MLCalendarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MLCalendarView.xib; sourceTree = "<group>"; };
 		DC86C09F1AFA630C00C1D378 /* EasyCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC86C0A31AFA630C00C1D378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC86C0A41AFA630C00C1D378 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,9 +71,17 @@
 		DC86C0961AFA630C00C1D378 = {
 			isa = PBXGroup;
 			children = (
+				DC08735E1B0A37D900A2851E /* MLCalendarBackground.h */,
+				DC08735F1B0A37D900A2851E /* MLCalendarBackground.m */,
+				DC0873601B0A37D900A2851E /* MLCalendarCell.h */,
+				DC0873611B0A37D900A2851E /* MLCalendarCell.m */,
+				DC0873621B0A37D900A2851E /* MLCalendarView.h */,
+				DC0873631B0A37D900A2851E /* MLCalendarView.m */,
+				DC0873641B0A37D900A2851E /* MLCalendarView.xib */,
 				DC86C0A11AFA630C00C1D378 /* EasyCalendar */,
 				DC86C0B21AFA630D00C1D378 /* EasyCalendarTests */,
 				DC86C0A01AFA630C00C1D378 /* Products */,
+				DC08735D1B0A37D800A2851E /* EasyCalendar-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -193,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC86C0A71AFA630C00C1D378 /* Images.xcassets in Resources */,
+				DC0873681B0A37D900A2851E /* MLCalendarView.xib in Resources */,
 				DC86C0C21AFA653200C1D378 /* TWCalendarViewController.xib in Resources */,
 				DC86C0AA1AFA630C00C1D378 /* MainMenu.xib in Resources */,
 			);
@@ -212,7 +233,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC0873651B0A37D900A2851E /* MLCalendarBackground.m in Sources */,
+				DC0873671B0A37D900A2851E /* MLCalendarView.m in Sources */,
 				DC86C0A51AFA630C00C1D378 /* AppDelegate.swift in Sources */,
+				DC0873661B0A37D900A2851E /* MLCalendarCell.m in Sources */,
 				DC86C0C11AFA653200C1D378 /* TWCalendarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,10 +355,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = EasyCalendar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EasyCalendar-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -342,10 +369,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = EasyCalendar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EasyCalendar-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -404,6 +433,7 @@
 				DC86C0BB1AFA630D00C1D378 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC86C0BC1AFA630D00C1D378 /* Build configuration list for PBXNativeTarget "EasyCalendarTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +442,7 @@
 				DC86C0BE1AFA630D00C1D378 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
