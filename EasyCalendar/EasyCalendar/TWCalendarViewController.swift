@@ -17,9 +17,14 @@ class TWCalendarViewController: NSViewController, MLCalendarViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
-        println("...........")
+//        println("...........")
+        
+        calendarController.backgroundColor = NSColor .clearColor()
+        
+        
         calendarController.delegate = self
         calendarView = calendarController.view
+        
         
         self.view.addSubview(calendarView)
     }
