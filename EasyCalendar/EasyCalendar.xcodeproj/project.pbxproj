@@ -68,9 +68,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DC86C0961AFA630C00C1D378 = {
+		DC53A84A1BBCEABB00BCBB15 /* MLCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				DC86C0A81AFA630C00C1D378 /* MainMenu.xib */,
 				DC08735E1B0A37D900A2851E /* MLCalendarBackground.h */,
 				DC08735F1B0A37D900A2851E /* MLCalendarBackground.m */,
 				DC0873601B0A37D900A2851E /* MLCalendarCell.h */,
@@ -78,6 +79,14 @@
 				DC0873621B0A37D900A2851E /* MLCalendarView.h */,
 				DC0873631B0A37D900A2851E /* MLCalendarView.m */,
 				DC0873641B0A37D900A2851E /* MLCalendarView.xib */,
+			);
+			name = MLCalendar;
+			sourceTree = "<group>";
+		};
+		DC86C0961AFA630C00C1D378 = {
+			isa = PBXGroup;
+			children = (
+				DC53A84A1BBCEABB00BCBB15 /* MLCalendar */,
 				DC86C0A11AFA630C00C1D378 /* EasyCalendar */,
 				DC86C0B21AFA630D00C1D378 /* EasyCalendarTests */,
 				DC86C0A01AFA630C00C1D378 /* Products */,
@@ -99,7 +108,6 @@
 			children = (
 				DC86C0A41AFA630C00C1D378 /* AppDelegate.swift */,
 				DC86C0A61AFA630C00C1D378 /* Images.xcassets */,
-				DC86C0A81AFA630C00C1D378 /* MainMenu.xib */,
 				DC86C0A21AFA630C00C1D378 /* Supporting Files */,
 				DC86C0BF1AFA653200C1D378 /* TWCalendarViewController.swift */,
 				DC86C0C01AFA653200C1D378 /* TWCalendarViewController.xib */,
@@ -176,6 +184,8 @@
 		DC86C0971AFA630C00C1D378 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Ted Wei";
 				TargetAttributes = {
@@ -266,6 +276,7 @@
 				DC86C0A91AFA630C00C1D378 /* Base */,
 			);
 			name = MainMenu.xib;
+			path = EasyCalendar;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
